@@ -1,0 +1,58 @@
+//Login API//
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+  "username": "christopher_phillips",
+  "password": "christy@123"
+}
+
+###
+GET http://localhost:3000/states/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+
+###
+GET http://localhost:3000/states/:stateId/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+
+###
+POST http://localhost:3000/districts/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+Content-Type: application/json
+
+{
+  "districtName": "Bagalkot",
+  "stateId": 3,
+  "cases": 2323,
+  "cured": 2000,
+  "active": 315,
+  "deaths": 8
+}
+
+###
+GET http://localhost:3000/districts/:districtId/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+
+
+###
+DELETE http://localhost:3000/districts/:districtId/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+
+
+###
+PUT http://localhost:3000/districts/:districtId/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
+Content-Type: application/json
+
+{
+  "districtName": "Nadia",
+  "stateId": 3,
+  "cases": 9628,
+  "cured": 6524,
+  "active": 3000,
+  "deaths": 104
+}
+
+###
+GET http://localhost:3000/states/:stateId/stats/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImNocmlzdG9waGVyX3BoaWxsaXBzIiwiaWF0IjoxNjc2NDQ0NzU0fQ.6BApqnqieIbxMNYDLXM0OcjQ9L0GGH8A6tghn97NntY
